@@ -12,12 +12,12 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Outline Tabs"/>
   <Description DefaultValue="A Google Docs-style document outline for Word: clickable heading tabs that follow your cursor."/>
-  <IconUrl DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-80.png"/>
-  <SupportUrl DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/"/>
+  <IconUrl DefaultValue="https://michael2deved.github.io/outlinetab/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://michael2deved.github.io/outlinetab/assets/icon-80.png"/>
+  <SupportUrl DefaultValue="https://michael2deved.github.io/outlinetab/"/>
 
   <AppDomains>
-    <AppDomain>https://YOUR-USERNAME.github.io</AppDomain>
+    <AppDomain>https://michael2deved.github.io</AppDomain>
   </AppDomains>
 
   <Hosts>
@@ -25,7 +25,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/taskpane.html"/>
+    <SourceLocation DefaultValue="https://michael2deved.github.io/outlinetab/taskpane.html"/>
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>
@@ -73,13 +73,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-16.png"/>
-        <bt:Image id="Icon.32" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-32.png"/>
-        <bt:Image id="Icon.80" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-80.png"/>
+        <bt:Image id="Icon.16" DefaultValue="https://michael2deved.github.io/outlinetab/assets/icon-16.png"/>
+        <bt:Image id="Icon.32" DefaultValue="https://michael2deved.github.io/outlinetab/assets/icon-32.png"/>
+        <bt:Image id="Icon.80" DefaultValue="https://michael2deved.github.io/outlinetab/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/taskpane.html"/>
-        <bt:Url id="Support.Url" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://michael2deved.github.io/outlinetab/taskpane.html"/>
+        <bt:Url id="Support.Url" DefaultValue="https://michael2deved.github.io/outlinetab/"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Group.Label" DefaultValue="Outline"/>
