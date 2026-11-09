@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+
+  <Id>7c1e5b0a-3f4d-4a52-9d57-0b6c2f8e1a41</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Outline Tabs</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Outline Tabs"/>
+  <Description DefaultValue="A Google Docs-style document outline for Word: clickable heading tabs that follow your cursor."/>
+  <IconUrl DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-80.png"/>
+  <SupportUrl DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/"/>
+
+  <AppDomains>
+    <AppDomain>https://YOUR-USERNAME.github.io</AppDomain>
+  </AppDomains>
+
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/taskpane.html"/>
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Document">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="Support.Url"/>
+          </GetStarted>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="OutlineGroup">
+                <Label resid="Group.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="ShowOutlineButton">
+                  <Label resid="Button.Label"/>
+                  <Supertip>
+                    <Title resid="Button.Label"/>
+                    <Description resid="Button.Tip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>OutlineTabsPane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-16.png"/>
+        <bt:Image id="Icon.32" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-32.png"/>
+        <bt:Image id="Icon.80" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/taskpane.html"/>
+        <bt:Url id="Support.Url" DefaultValue="https://YOUR-USERNAME.github.io/outline-tabs/"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="Group.Label" DefaultValue="Outline"/>
+        <bt:String id="Button.Label" DefaultValue="Document tabs"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Outline Tabs is ready"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="Button.Tip" DefaultValue="Open a Google Docs-style outline of your headings. Click a heading to jump to it."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Open the Home tab and choose Document tabs to see your outline."/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

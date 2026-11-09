@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outline Tabs</title>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <span>Document tabs</span>
+      <button id="refresh" title="Refresh" aria-label="Refresh">&#x21bb;</button>
+    </div>
+    <input id="filter" type="search" placeholder="Filter headings" autocomplete="off">
+    <div class="toolbar">
+      <button id="expandAll">Expand all</button>
+      <button id="collapseAll">Collapse all</button>
+    </div>
+  </header>
+  <nav id="outline" aria-label="Document outline"></nav>
+  <p id="empty" hidden>No headings yet. Apply a Heading style (Heading 1–6 or Title) and it will show up here.</p>
+  <script src="taskpane.js"></script>
+</body>
+</html>
